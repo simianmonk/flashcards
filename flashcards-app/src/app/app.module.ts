@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ConsonantComponent } from './consonant/consonant.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCardModule } from '@angular/material';
+import {Component} from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { ConsonantComponent } from './consonant/consonant.component';
     ConsonantComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,4 +13,11 @@ export class AppComponent {
   firstLetter = this.consonants.charAt(Math.floor(Math.random() * this.consonants.length));
   secondLetter = this.vowels.charAt(Math.floor(Math.random() * this.vowels.length));
   thirdLetter = this.consonants.charAt(Math.floor(Math.random() * this.consonants.length));
+
+  randomizeWord() {
+    this.firstLetter = this.consonants.charAt(Math.floor(Math.random() * this.consonants.length));
+    this.secondLetter = this.vowels.charAt(Math.floor(Math.random() * this.vowels.length));
+    this.thirdLetter = this.consonants.charAt(Math.floor(Math.random() * this.consonants.length));
+  
+  }
 }
