@@ -13,11 +13,27 @@
   <!-- Resources -->
   <div>
     <mat-card align="center">
+      <mat-card-title ><h2>Random 3-letter Combinations</h2></mat-card-title>
       <mat-card-content ><h1>{{firstLetter}}{{secondLetter}}{{thirdLetter}}</h1></mat-card-content>
       <mat-card-actions><button mat-raised-button color="blue" (click)="randomizeWord()">NEXT</button></mat-card-actions>
     </mat-card>
   </div>  
-
+  <div style="height: 100px;"></div> 
+  <div>
+    <mat-card align="center">
+      <mat-card-title ><h2>Sight Words</h2></mat-card-title>
+      <mat-card-content ><h1>{{targetWord}}</h1></mat-card-content>
+      <mat-card-actions><button mat-raised-button color="blue" (click)="randomizeSightWord()">NEXT</button></mat-card-actions>
+    </mat-card>
+  </div> 
+  <!-- <div>
+    <mat-card align="center">
+      <mat-card-content >
+        <h1>{{targetSightWordsLength}}</h1>
+        <p>{{orderArray.toString()}}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>   -->
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
